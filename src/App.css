@@ -1,0 +1,181 @@
+/* Basic Body Styling with Gradient */
+body {
+  background: linear-gradient(135deg, #0c0c0b, #333035, #1a151a);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar.css */
+.navbar {
+  background: linear-gradient(90deg, #0e0e0e, #0c090c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* General Layout Styling */
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff; /* Optional white background inside the main container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners for the main content */
+}
+
+/* Blog Post Container */
+.post-container {
+  background: linear-gradient(135deg, #302d33, #1a151a);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog Post Header */
+.post-header {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.post-container h1,
+.post-container h2,
+.post-container h3,
+.post-container h4 {
+  color: #ffffff !important; /* Force white text for headings */
+}
+
+/* Ensure paragraph text is white */
+.post-container p {
+  font-size: 1.5em;
+  color: #ffffff !important; /* Force white text for paragraph */
+}
+
+/* Ensure post-meta text is white */
+.post-container .post-meta h4 {
+  color: #ffffff !important; /* Force white text for post-meta */
+}
+/* Image Styling */
+.post-image {
+  width: 75%;
+  height: 75%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Author and Date Styling */
+.post-meta {
+  font-size: 1.1em;
+  color: #ffffff;
+
+}
+
+/* Main Content Container */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Footer Styling */
+.App-footer {
+  background-color: #023e8a;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Create Post Button */
+.create-post-button {
+  display: flex;
+  width: 20%;
+  padding: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #111012, #261e2f);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.create-post-button:hover {
+  background: linear-gradient(135deg, #d276ee, #5f087e);
+}
+
+/* Blog Form Container */
+.blog-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 1200px) {
+  .posts-container .post-container {
+    flex-basis: 30%; /* Three posts per row */
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+  .posts-container .post-container {
+    flex-basis: 45%; /* Two posts per row */
+  }
+}
+
+@media (max-width: 799px) {
+  .posts-container .post-container {
+    flex-basis: 100%; /* One post per row */
+  }
+}
