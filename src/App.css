@@ -1,4 +1,4 @@
-/* Basic Body Styling with Gradient */
+
 body {
   background: linear-gradient(135deg, #0c0c0b, #333035, #1a151a);
   font-family: 'Arial', sans-serif;
@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* Navbar.css */
+
 .navbar {
   background: linear-gradient(90deg, #0e0e0e, #0c090c);
   display: flex;
@@ -20,18 +20,18 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* General Layout Styling */
+
 .App {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background: #ffffff; /* Optional white background inside the main container */
+  background: #ffffff; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Rounded corners for the main content */
+  border-radius: 10px;
 }
 
-/* Blog Post Container */
+
 .post-container {
   background: linear-gradient(135deg, #302d33, #1a151a);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -46,7 +46,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Blog Post Header */
+
 .post-header {
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
@@ -57,20 +57,19 @@ body {
 .post-container h2,
 .post-container h3,
 .post-container h4 {
-  color: #ffffff !important; /* Force white text for headings */
+  color: #ffffff !important;
 }
 
-/* Ensure paragraph text is white */
+
 .post-container p {
   font-size: 1.5em;
-  color: #ffffff !important; /* Force white text for paragraph */
+  color: #ffffff !important; 
 }
 
-/* Ensure post-meta text is white */
 .post-container .post-meta h4 {
-  color: #ffffff !important; /* Force white text for post-meta */
+  color: #ffffff !important; 
 }
-/* Image Styling */
+
 .post-image {
   width: 75%;
   height: 75%;
@@ -78,14 +77,14 @@ body {
   margin-bottom: 20px;
 }
 
-/* Author and Date Styling */
+
 .post-meta {
   font-size: 1.1em;
   color: #ffffff;
 
 }
 
-/* Main Content Container */
+
 .posts-container {
   display: flex;
   flex-wrap: wrap;
@@ -94,7 +93,6 @@ body {
   gap: 20px;
 }
 
-/* Footer Styling */
 .App-footer {
   background-color: #023e8a;
   color: white;
@@ -105,7 +103,6 @@ body {
   text-align: center;
 }
 
-/* Create Post Button */
 .create-post-button {
   display: flex;
   width: 20%;
@@ -129,7 +126,6 @@ body {
   background: linear-gradient(135deg, #d276ee, #5f087e);
 }
 
-/* Blog Form Container */
 .blog-form-container {
   max-width: 600px;
   margin: 0 auto;
@@ -143,7 +139,6 @@ h1 {
   text-align: center;
 }
 
-/* Form Styling */
 .form-group {
   margin-bottom: 15px;
 }
@@ -161,21 +156,20 @@ h1 {
   border-radius: 4px;
 }
 
-/* Responsive breakpoints */
 @media (min-width: 1200px) {
   .posts-container .post-container {
-    flex-basis: 30%; /* Three posts per row */
+    flex-basis: 30%; 
   }
 }
 
 @media (min-width: 800px) and (max-width: 1199px) {
   .posts-container .post-container {
-    flex-basis: 45%; /* Two posts per row */
+    flex-basis: 45%;
   }
 }
 
 @media (max-width: 799px) {
   .posts-container .post-container {
-    flex-basis: 100%; /* One post per row */
+    flex-basis: 100%;
   }
 }
