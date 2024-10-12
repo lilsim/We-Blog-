@@ -3,12 +3,12 @@ import Posts from './components/Posts';
 import BlogFormComponent from './components/BlogForm';
 import NavbarComponent from './components/NavBar';
 import { useState } from 'react';
-import Home from './components/Home'; // Import your components
+import Home from './components/Home'; 
 import About from './components/About';
 import Contact from './components/Contact';
 
 function App() {
-  const [currentView, setCurrentView] = useState('home'); // State to track the current view
+  const [currentView, setCurrentView] = useState('home'); 
   const [createPost, setCreatePost] = useState(false);
   const [blogPosts, setBlogPosts] = useState([
     {
@@ -66,13 +66,12 @@ function App() {
       imgUrl: "https://media.geeksforgeeks.org/img-practice/banner/cp-maths-java-thumbnail.png",
     },
 
-    // Other blog posts...
   ]);
 
-  // Handle switching views
+ 
   const switchView = (view) => {
     setCurrentView(view);
-    setCreatePost(false); // Reset create post state when switching views
+    setCreatePost(false); 
   };
 
   const handleCreatePostToggle = () => {
@@ -83,7 +82,7 @@ function App() {
     setBlogPosts((prevPosts) => [...prevPosts, newPost]);
   };
 
-  // Conditionally render components based on current view
+ 
   return (
     <div className="main-container">
       <NavbarComponent switchView={switchView} handleCreatePostToggle={handleCreatePostToggle} /> {/* Pass switchView and handleCreatePostToggle to NavbarComponent */}
@@ -97,8 +96,8 @@ function App() {
         </div>
       )}
 
-      {currentView === 'about' && <About />} {/* Render About component */}
-      {currentView === 'contact' && <Contact />} {/* Render Contact component */}
+      {currentView === 'about' && <About />} 
+      {currentView === 'contact' && <Contact />} 
     </div>
   );
 }
